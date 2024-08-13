@@ -1,0 +1,57 @@
+/* General reset for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Styling for the navbar */
+  nav {
+    position: fixed; /* Makes the navbar stay in one place */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000; /* Ensures it's always on top of other elements */
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.5rem 1rem;
+  }
+  
+  nav ul li {
+    margin-right: 1.5rem;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem; /* Adds padding inside the links for consistent size */
+    border-radius: 5px; /* Adds a slight rounding for a cleaner look */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a.active {
+    color: white; /* Text color on hover or active */
+    background-color: #4CAF50; /* Background color for active or hover */
+  }
+  
+  /* Adding some padding at the top of the body to account for the fixed navbar */
+  .contact-container {
+    margin-top: 3rem; /* Adjust based on the navbar height */
+  }
+  

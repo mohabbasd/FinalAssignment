@@ -1,0 +1,153 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.content-container {
+  padding-top: 0; /* Set padding to 0 to remove space */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Home Container */
+.home-container {
+  font-family: 'Arial', sans-serif;
+  color: #000000;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(to right, #4dc77e, #0dc9c6);
+  color: #fff;
+  text-align: center;
+  padding: 4rem 0;
+  margin-top: 0; /* Ensure no margin is applied to the top of the header */
+}
+
+.header-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.header-content p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.header-content .btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: #ff6f00;
+  color: #000000;
+  border-radius: 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.header-content .btn:hover {
+  background: #ea00ff;
+  transform: scale(1.05);
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 1.5rem;
+  background: #f0f0f0;
+  flex-grow: 1;
+}
+
+.feature {
+  text-align: center;
+  flex: 1;
+  max-width: 300px;
+  padding: 1rem;
+}
+
+.feature i {
+  font-size: 2rem;
+  color: #3f51b5;
+  margin-bottom: 1rem;
+}
+
+.feature h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.feature p {
+  font-size: 1rem;
+  color: #555; /* Darkened for better readability */
+}
+
+/* Footer */
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  flex-shrink: 0; /* Ensure the footer is at the bottom */
+}
+
+.footer p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.footer-links li {
+  margin: 0 1.5rem; /* Increased spacing between links */
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 1rem;
+}
+
+.footer-links a:hover {
+  color: #ff4081;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+  }
+
+  .footer-links li {
+    margin: 0.5rem 0;
+  }
+}
